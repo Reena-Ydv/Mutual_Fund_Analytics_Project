@@ -8,4 +8,4 @@ Thumbs.db
 venv/
 
 data/raw/
-data/processed/
+# data/Processed/
