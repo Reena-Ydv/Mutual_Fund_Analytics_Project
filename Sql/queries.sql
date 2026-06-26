@@ -1,3 +1,5 @@
+-- 10 Queries for Mutual Fund Analytics Project
+
 -- Query1: top 5 fund houses by maximum AUM in crores
 select
     fund_house,
