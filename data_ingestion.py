@@ -1,3 +1,5 @@
+# Data Ingestion Script (Data Summary)
+
 import pandas as pd
 import os
 
@@ -27,7 +29,7 @@ for file in files:
 
         print("\nData Types:")
         print(df.dtypes)
-        
+
         print("\nFirst 5 Rows:")
         print(df.head())
 

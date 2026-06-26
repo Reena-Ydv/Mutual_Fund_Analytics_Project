@@ -1,8 +1,8 @@
 # Data Quality Assessment Report
 
-## Mutual Fund Analytics Project – Day 1 (Data Ingestion & Validation)
+# Mutual Fund Analytics Project – Day 1 (Data Ingestion & Validation)
 
-### 1. Introduction
+## 1. Introduction
 
 The objective of this phase was to ingest, understand, and validate the datasets provided for the Mutual Fund Analytics Project. A detailed review was conducted on all available datasets to assess their structure, completeness, consistency, and suitability for further analysis. The assessment focused on schema validation, data type verification, identification of missing values, consistency of AMFI scheme codes, and detection of potential data quality issues.
 
