@@ -44,7 +44,46 @@
 
 
 
-## Dataset 4: 07_scheme_performance.csv
+## Dataset 4 : 04_monthly_sip_inflows_cleaned.csv
+
+| Column                    | Data Type | Business Definition                                      |
+| ------------------------- | --------- | -------------------------------------------------------- |
+| month                     | DATE      | Reporting month for SIP statistics.                      |
+| sip_inflow_crore          | INTEGER   | Total monthly SIP inflows in crore rupees.               |
+| active_sip_accounts_crore | REAL      | Total active SIP accounts in crore.                      |
+| new_sip_accounts_lakh     | REAL      | Number of new SIP accounts registered (in lakh).         |
+| sip_aum_lakh_crore        | REAL      | SIP Assets Under Management in lakh crore.               |
+| yoy_growth_pct            | REAL      | Year-over-Year percentage growth in monthly SIP inflows. |
+
+
+
+## Dataset 5: 05_category_inflows.csv
+
+| Column              | Data Type | Business Definition                                      |
+| ------------------- | --------- | -------------------------------------------------------- |
+| month               | DATE      | Reporting month for industry folio statistics.           |
+| total_folios_crore  | REAL      | Total mutual fund folios across the industry (in crore). |
+| equity_folios_crore | REAL      | Number of equity mutual fund folios (in crore).          |
+| debt_folios_crore   | REAL      | Number of debt mutual fund folios (in crore).            |
+| hybrid_folios_crore | REAL      | Number of hybrid mutual fund folios (in crore).          |
+| others_folios_crore | REAL      | Number of folios in other mutual fund categories.        |
+
+
+
+## Dataset 6: 06_industry_folio_count.csv
+
+| Column              | Data Type | Business Definition                                      |
+| ------------------- | --------- | -------------------------------------------------------- |
+| month               | DATE      | Reporting month for industry folio statistics.           |
+| total_folios_crore  | REAL      | Total mutual fund folios across the industry (in crore). |
+| equity_folios_crore | REAL      | Number of equity mutual fund folios (in crore).          |
+| debt_folios_crore   | REAL      | Number of debt mutual fund folios (in crore).            |
+| hybrid_folios_crore | REAL      | Number of hybrid mutual fund folios (in crore).          |
+| others_folios_crore | REAL      | Number of folios in other mutual fund categories.        |
+
+
+
+## Dataset 7: 07_scheme_performance.csv
 
 | Column             | Data Type | Business Definition                   |
 | ------------------ | --------- | ------------------------------------- |
@@ -70,7 +109,7 @@
 
 
 
-## Dataset 5: 08_investor_transactions.csv
+## Dataset 8: 08_investor_transactions.csv
 | Column             | Data Type | Business Definition                   |
 | ------------------ | --------- | ------------------------------------- |
 | investor_id        | TEXT      | Unique investor identifier.           |
@@ -87,3 +126,17 @@
 | payment_mode       | TEXT      | Mode of payment.                      |
 | kyc_status         | TEXT      | Investor KYC verification status.     |
 
+
+
+## Dataset 9: 09_portfolio_holdings.csv
+
+| Column            | Data Type | Business Definition                                     |
+| ----------------- | --------- | ------------------------------------------------------- |
+| amfi_code         | INTEGER   | Unique AMFI code identifying the mutual fund scheme.    |
+| stock_symbol      | TEXT      | NSE/BSE stock ticker symbol.                            |
+| stock_name        | TEXT      | Name of the company held in the mutual fund portfolio.  |
+| sector            | TEXT      | Business sector to which the company belongs.           |
+| weight_pct        | REAL      | Percentage weight of the holding in the fund portfolio. |
+| market_value_cr   | REAL      | Market value of the holding in crore rupees.            |
+| current_price_inr | REAL      | Current market price of the stock in Indian Rupees (₹). |
+| portfolio_date    | DATE      | Date on which the portfolio holdings were reported.     |
